@@ -1,0 +1,51 @@
+1) SELECT Name,Job
+   FROM empleados
+   //
+2) SELECT Name,Age
+   FROM empleados
+   //
+3) SELECT Name,Surname,Job,Age 
+   FROM empleados
+   WHERE Job = 'Programador'
+   //
+4) SELECT Name, Surname,Age 
+   FROM empleados
+   WHERE Age > 30
+   //
+5) SELECT Name,Surname,Mail
+   FROM empleados
+   WHERE Name = 'Juan'
+   //   
+6) SELECT Name,Surname,Job
+   FROM empleados
+   WHERE Job IN ('Desarrollador Web','Programador')
+   //
+7) SELECT id_emp, Name,Surname,Age
+FROM empleados
+WHERE id_emp BETWEEN '15' AND '20'
+   //
+8) SELECT Name,Surname,Job,Age,Salary
+   FROM empleados
+   WHERE Job = 'Programador' AND Salary < 80000
+   //
+ 9) SELECT Name,Surname,Job,Age,Salary
+   FROM empleados
+   WHERE Job = 'Programador' AND Salary BETWEEN '75000' AND '90000'
+   //
+10) SELECT Name,Surname
+ FROM empleados
+ WHERE Name LIKE 'S%'
+ //
+11) SELECT Name, Surname
+    FROM empleados
+    WHERE Name LIKE '%l'
+   // 
+12) INSERT INTO empleados VALUES (22, 'Francisco', 'Perez', 'Programador', 26, 90000, 'francisco@bignet.com.');
+  //
+13) DELETE FROM empleados
+    WHERE id_emp= 9
+      //
+14)  UPDATE empleados
+     SET Salary=90000
+     WHERE id_emp=14
+     //
